@@ -1,0 +1,56 @@
+body{
+  background-color: gray;
+  user-select: none; /* Standard syntax */
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+h1 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.board{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(8, 70px);
+  grid-template-rows: repeat(8, 70px);
+  width: calc(8*70px);
+  top: 15%;
+  right: 35%;
+}
+
+.square--light{
+  background: #c29b61;
+}
+
+.square--dark{
+  background: white;
+}
+
+.ranks{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+}
+
+.files{
+  position: absolute;
+  left: 25%;
+  top: 11%;
+}
+
+.rank{
+  margin: 34%;
+}
+
+.file{
+  margin: 6.5vh;
+}
